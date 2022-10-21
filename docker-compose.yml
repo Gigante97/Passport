@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres:
+    image: "postgres:13"
+    container_name: 'passport-postgres'
+    environment:
+      - 'POSTGRES_USER=passportpguser'
+      - 'POSTGRES_PASSWORD=pgpwd4passport'
+      - 'POSTGRES_DB=products'
+  app:
+    build: ./
+    container_name: "passport-app"
+    ports:
+      - 8188:8188

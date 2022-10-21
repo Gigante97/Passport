@@ -5,9 +5,13 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/products
-    username: habrpguser
-    password: pgpwd4habr
+    url: jdbc:postgresql://postgres:5432/products
+    username: passportpguser
+    password: pgpwd4passport
+  flyway:
+    user: passportpguser
+    password: pgpwd4passport
+    url: jdbc:postgresql://postgres:5432/products
   jpa:
     show-sql: true
     properties:
