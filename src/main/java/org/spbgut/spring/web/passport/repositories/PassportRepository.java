@@ -9,5 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface PassportRepository extends JpaRepository<Passport,Long> {
-    Optional<Passport> findByNumber(String number);
+    Optional<Passport> findByNumber(Integer number);
 }

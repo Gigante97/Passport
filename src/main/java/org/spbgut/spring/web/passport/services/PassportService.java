@@ -12,7 +12,7 @@ import java.util.Optional;
 public class PassportService {
     private final PassportRepository passportRepository;
 
-    public Optional<Passport> findByNumber(String number){
+    public Optional<Passport> findByNumber(Integer number){
         return passportRepository.findByNumber(number);
     }
 }
