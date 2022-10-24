@@ -25,6 +25,7 @@ public class PassportController {
     public Optional<PassportDto> getProductByNumber(@PathVariable Integer number) {
        // Passport passport = passportService.findByNumber(number).orElseThrow(() -> new ResourceNotFoundException("Product not find" + number));
         //return passport;
+        //PassportDto passportDto = passportService.findByNumber(number).map(p->passportConverter.entityToDto(p)).orElseThrow(()->new ResourceNotFoundException("Product not found with id: " + number));
         passportService.findByNumber(number).orElseThrow(()->new ResourceNotFoundException("Product not found with id: " + number));
         return passportService.findByNumber(number).map(p->passportConverter.entityToDto(p));
     }
