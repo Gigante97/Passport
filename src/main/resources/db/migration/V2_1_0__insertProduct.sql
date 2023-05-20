@@ -10,3 +10,4 @@ insert into works (id, product_id, reglament_id) VALUES (1,1,3);
 insert into works (id, product_id, reglament_id) VALUES (2,1,1);
 insert into works (id, product_id, reglament_id) VALUES (3,2,3);
 insert into works (id, product_id, reglament_id) VALUES (4,3,2);
+
